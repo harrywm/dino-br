@@ -1,0 +1,23 @@
+{
+  "name": "dino",
+  "version": "1.0.0",
+  "description": "dino br",
+  "main": "index.html",
+  "scripts": {
+    "test": "test dino"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrywm/dino-br.git"
+  },
+  "author": "hm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harrywm/dino-br/issues"
+  },
+  "homepage": "https://github.com/harrywm/dino-br#readme",
+  "dependencies": {
+    "@types/p5": "^0.9.1",
+    "p5": "^1.2.0"
+  }
+}

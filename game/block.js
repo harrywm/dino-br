@@ -1,7 +1,6 @@
 /// <reference path="../p5.global-mode.d.ts" />
 
-class block {
-
+class Block {
     constructor() {
       this.r = 50;
       this.x = width - this.r;
