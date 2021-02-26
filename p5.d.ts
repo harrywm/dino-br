@@ -4053,7 +4053,7 @@ declare class p5 {
   ceil(n: number): number
   
   /**
-   *   Constrains a value between a minimum and maximum 
+   *   constrains a value between a minimum and maximum 
    *   value.
    *
    *   @param n number to constrain
@@ -6385,7 +6385,7 @@ declare class p5 {
    *   audio/video feed from a webcam. This can be drawn 
    *   onto the canvas using video(). More specific 
    *   properties of the feed can be passing in a 
-   *   Constraints object. See the  W3C spec for possible 
+   *   constraints object. See the  W3C spec for possible 
    *   properties. Note that not all of these are 
    *   supported by all browsers. 
    * 
@@ -6396,7 +6396,7 @@ declare class p5 {
    *   here and here.
    *
    *   @param type type of capture, either VIDEO or AUDIO 
-   *   if none specified, default both, or a Constraints 
+   *   if none specified, default both, or a constraints 
    *   object
    *   @param callback function to be called once stream 
    *   has loaded

@@ -1,6 +1,6 @@
 /// <reference path="../p5.global-mode.d.ts" />
 
-class Train {
+class block {
 
     constructor() {
       this.r = 50;

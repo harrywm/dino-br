@@ -1,6 +1,6 @@
 /// <reference path="../p5.global-mode.d.ts" />
 
-class Unicorn {
+class User {
 
     constructor() {
         this.r = 50;
@@ -27,7 +27,7 @@ class Unicorn {
         this.y = constrain(this.y, 0, height - this.r);
     }
 
-    hits(train) {
-        return collideRectRect(this.x, this.y, this.r - 5, this.r - 5, train.x, train.y, train.r, train.r);
+    hits(block) {
+        return collideRectRect(this.x, this.y, this.r - 5, this.r - 5, block.x, block.y, block.r, block.r);
     }
 }
