@@ -1,4 +1,4 @@
-/// <reference path="../p5.global-mode.d.ts" />
+/// <reference path="../../p5.global-mode.d.ts" />
 
 class User {
 
@@ -15,7 +15,7 @@ class User {
     }
 
     show() {
-        fill(47, 47, 30);
+        fill(user_config.user_r, user_config.user_b, user_config.user_g);
         stroke(0);
         strokeWeight(2);
         rect(this.x, this.y, this.r, this.r);

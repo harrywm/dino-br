@@ -1,11 +1,11 @@
-/// <reference path="../p5.global-mode.d.ts" />
+/// <reference path="../../p5.global-mode.d.ts" />
 
 class Block {
     constructor() {
       this.r = 50;
       this.x = width - this.r;
       this.y = height - this.r;
-      this.speed = 5
+      this.speed = user_config.speed
     }
   
     show() {
