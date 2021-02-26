@@ -1,4 +1,4 @@
-/// <reference path="./p5.global-mode.d.ts" />
+/// <reference path="../p5.global-mode.d.ts" />
 
 class Unicorn {
 
@@ -9,7 +9,7 @@ class Unicorn {
         this.vy = 0;
         this.gravity = 1;
     }
-
+ 
     jump() {
         this.vy = 20;
     }
