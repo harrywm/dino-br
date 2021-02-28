@@ -27,6 +27,9 @@ let powerups = [];
 
 let score;
 let score2;
+
+scoreNum = 0;
+
 let speedi;
 
 function keyPressed() {
@@ -66,7 +69,7 @@ function draw() {
 
     user.show();
     user.move();
-//let clientList = io.of("http://localhost:3000").clients()
+    //let clientList = io.of("http://localhost:3000").clients()
 
     textSize(30);
     stroke(0);
@@ -74,18 +77,16 @@ function draw() {
     fill(0);
     text("Score: " + score, 10, 30);
 
-    /*clientList.forEach((player) => {
-        textSize(30);
-        stroke(0);
-        strokeWeight(1);
-        fill(0);
-        text("Score " + clientList.indexOf(player) + 1 * 10 + 10 + ": " + score2, 10, 60);
-    });
-    {
-        io.sockets.on("die", (data) => {
-          score2 = data.s;
+    io.socket.on("die", (data) => {
+        score2 = data.s;
       });
-    }  */
+
+    textSize(30);
+    stroke(0);
+    strokeWeight(1);
+    fill(0);
+    text("Score: 2" + score2, 10, 60);
+
 
     if (random(user_config.randomVal) < user_config.randomizer) {
       console.log("randomval: ", user_config.randomVal);
@@ -158,5 +159,5 @@ function draw() {
 function sendScore(sc) {
   const data = { s: sc };
 
-  //io.sockets.emit("die", data);
+  io.socket.emit("die", data);
 }
